@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HousingService } from 'src/app/services/housing.service';
+import { Iproperty } from '../Iproperty.interface';
 
 
 @Component({
@@ -8,7 +9,7 @@ import { HousingService } from 'src/app/services/housing.service';
   styleUrls: ['./property-list.component.css']
 })
 export class PropertyListComponent {
-  properties:Array<any>=[];
+  properties:Array<Iproperty>=[];
  
   constructor(private housingservice:HousingService){}
 
