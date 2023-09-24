@@ -1,15 +1,17 @@
 <div class="card">
     <div class="card-img-wrapper">
-        <img class="propimg card-img-top" src="assets/Images/House-Default.png">
+        <img *ngIf="property.Image" class="propimg card-img-top" src="assets/Images/{{property.Image}}.jpg">
+        <img *ngIf="!property.Image" class="propimg card-img-top" src="assets/Images/House-Default.png">
         <ul class="list-inline text-center member-icons animate">
             <li class="list-inline-item">
                 <button class="btn btn-primary" routerLink="/property-details/{{property.Id}}"><i class="fa-regular fa-pen-to-square"></i></button>
+                <!-- <button class="btn btn-primary" routerLink="/property-details/1"><i class="fa-regular fa-pen-to-square"></i></button> -->
             </li>
             <li class="list-inline-item">
                 <button class="btn btn-primary"><i class="fa-solid fa-address-card"></i></button>
             </li>
         </ul>
-    </div>
+    </div>  
     <div class="card-body p-2">
         <h1>{{property.Name}}</h1>
         <h2>{{property.Type}}</h2>

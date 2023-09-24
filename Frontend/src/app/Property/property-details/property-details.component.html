@@ -2,3 +2,14 @@
   property-details works!
   property id is {{propertyId}}
 </p>
+
+<button (click)="toNextComponent();" class="btn btn-primary">Click to Next component</button> &nbsp; &nbsp; &nbsp;
+<button (click)="toPreviusComponent();" class="btn btn-primary">Click to Previus component</button>
+
+<br><br><br>
+
+<button routerLink="/property-details/1" class="btn btn-primary">1</button> &nbsp;
+<button routerLink="/property-details/2" class="btn btn-primary">2</button> &nbsp;
+<button routerLink="/property-details/3" class="btn btn-primary">3</button> &nbsp;
+<button routerLink="/property-details/4" class="btn btn-primary">4</button> &nbsp;
+<button routerLink="/property-details/5" class="btn btn-primary">5</button>
